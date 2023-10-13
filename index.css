@@ -1,0 +1,363 @@
+
+/*LAYOUT*/
+
+html{
+    background-color: #FFF7F0;
+}
+body {
+    
+    margin: 10px auto;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+}
+
+button{
+    width: 176px;
+    height: 44px;
+    border-radius: 28px;
+    border: 0;
+    color: #FFF7F0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.free-con-black{
+    background: var(--Black, #030303);
+    margin-top: 0;
+}
+.free-con-black:hover{
+    background: var(--1---Galactic-Blue, #755CDE);
+    cursor: pointer;
+}
+.free-con-orange{
+    background: var(--4---Light-Red, #EB7565);
+}
+
+.free-con-orange:hover{
+    background: var(--2---Summer-Yellow, #F6A560);
+    cursor: pointer;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 182px 158px;
+    grid-gap: 5px;
+    margin: 65px auto 75px;
+    width: fit-content;
+} 
+
+.graphic-design, .apps, 
+.ux-ui, .photography, 
+.illustrations, .motion-graphics{
+    padding: 16px;
+    position: relative;
+    
+}
+.graphic-design{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 8px;
+    background: var(--1---Galactic-Blue, #755CDE);
+    width: 300px;
+}
+.graphic-design img{
+    display: block;
+    margin-left: auto;
+    width: 128px;
+    height: 192px; 
+}
+.ux-apps-container{
+    display: flex;
+    gap: 10px;
+}
+.ux-ui{
+    border-radius: 8px;
+    background: var(--2---Summer-Yellow, #F6A560);
+    width: 130px;
+    height: 150px;
+}
+.ux-ui img{
+    display: block;
+    margin-left: auto;
+    width: 64px;
+    height: 64px;
+}
+.apps{
+    border-radius: 8px;
+    background: #F39E9E;
+    width: 130px;
+    height: 150px;
+}
+.apps img{
+    display: block;
+    margin-left: auto;
+    width: 64px;
+    height: 64px;
+}
+.photography{
+    border-radius: 8px;
+    background: var(--5---Cyan, #61C4B7);
+    width: 300px;
+    height: 150px;
+}
+
+.photography img{
+    display: block;
+    margin-left: auto;
+    width: 160px;
+    height: 64px;
+}
+.illustrations{
+    grid-row: 2 / 3;
+    border-radius: 8px;
+    background: var(--4---Light-Red, #EB7565);
+    width: 300px;
+    height: 120px;
+}
+
+.illustrations img{
+    display: block;
+    margin-left: auto;
+    width: 160px;
+    height: 64px;
+}
+.motion-graphics{
+    border-radius: 8px;
+    background: #552049;;
+    width: 300px;
+    height: 120px;
+}
+
+.motion-graphics img{
+    display: block;
+    margin-left: auto;
+    width: 160px;
+    height: 64px;
+}
+
+.amy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto 65px;
+    max-width: 1110px;
+}
+
+#amy-img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.amy-description{
+    width: 540px;
+}
+
+.wrapper .carousel{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    margin: 50px 0 20px;
+}
+.carousel .img-slide{
+    height: 360px;
+    object-fit: cover;
+    width: calc(100% / 3);
+}
+.img-slide{
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.arrow-icon{
+    background-color: black;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.arrow-icon:hover{
+    background: var(--1---Galactic-Blue, #755CDE);
+}
+.book{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1110px;
+    align-items: center;
+    background-color: black;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 50px 10px 50px;
+}
+/*TYPOGRAPHY*/
+
+.hero{
+    text-align: center;
+}
+
+.hero h1{
+    font-weight: 700;
+    font-size: 2.25em;
+    margin-bottom: 5px;
+}
+.hero p{
+    color: #7A746E;
+    font-weight: 500;
+    font-size: 1.125em;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 730px;
+}
+.services-headline{
+    color: #FFF;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+}
+.amy-description h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.amy-description p{
+    color: var(--Medium-Brown, #7A746E);
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+#my-work{
+    text-align: center;
+}
+.book-description{
+    color: #FFF7F0;
+    width: 540px;
+    color: var(--Light-Cream, #FFF7F0);
+}
+.book-description h2, #my-work h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.book-description p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width:  1024px){
+    /*LAYOUT*/
+    body{
+        width: 90%;
+    }
+    nav{
+        width: 85%
+    }
+    .services{
+        grid-template-columns: auto auto;
+        grid-template-rows: 182px 158px 182px;
+        gap: 10px;
+    } 
+
+    .photography, .motion-graphics{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .graphic-design, .motion-graphics, 
+    .illustrations, .photography{
+        max-width: 250px;
+    }
+    .ux-apps-container{
+        display: flex;
+        max-width: 280px;
+        justify-content: space-between;
+    }
+    .motion-graphics{
+        height: 150px;
+    }
+
+    .amy{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto 65px;
+        max-width: 772px;
+    }
+    .carousel .img-slide{
+        width: fit-content;
+    }
+
+    .book{
+        flex-direction: column;
+        text-align: center;
+        max-width: 690px;
+    }
+}
+
+@media(max-width: 600px){
+
+/*LAYOUT*/
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    .services{
+        grid-template-columns: auto;
+        grid-template-rows: 182px 182px 158px 182px 182px;
+        grid-gap: 5px;
+    } 
+    .ux-apps-container{
+        grid-row: 3 / 4;
+    }
+    .illustrations{
+        grid-row: 4 / 5;
+        margin-top: 25px;
+    }
+    .photography{
+        grid-row:5 / 6;
+    }
+    .motion-graphics{
+        grid-row: 6 / 7;
+    }
+    .carousel .img-slide{
+        width: 100%;
+    }
+    .amy{
+        align-items: center;
+        width: 350px;
+    }
+    .amy-description{
+        width: 400px;
+    }
+    .amy-description h2{
+        font-size: 30px;
+    }
+    .book{
+        flex-direction: column;
+        text-align: center;
+        max-width: 590px;
+    }
+
+    .book-description{
+        width: fit-content;
+    }
+    /*Typography*/
+    .book-description h2{
+        font-size: 2em;
+    }
+}
