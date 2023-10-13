@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/Olebxgeng/Single-Page-Design-Portfolio)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Single Page Design Portfolio](https://imaginative-elf-6cab69.netlify.app/)
 
 ### Built with
 
@@ -56,6 +56,5 @@ Will definetly be focusing on practising more/different JS concepts and how they
 
 ## Author
 
-- Website - [Olebogeng Sebogodi](https://www.your-site.com)
 - Frontend Mentor - [@Olebxgeng](https://www.frontendmentor.io/profile/Olebxgeng)
 
